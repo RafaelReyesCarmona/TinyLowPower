@@ -1,0 +1,34 @@
+#########################################
+# Syntax Coloring Map For TinyLowPower
+#########################################
+
+#########################################
+# Datatypes (KEYWORD1)
+#########################################
+
+#########################################
+# Methods and Functions (KEYWORD2)
+#########################################
+
+TinyLowPower	KEYWORD2
+cbi KEYWORD2
+sbi KEYWORD2
+
+#########################################
+# Instances (KEYWORD2)
+#########################################
+
+#########################################
+# Constants (LITERAL1)
+#########################################
+
+WDTO_15MS	LITERAL1
+WDTO_30MS	LITERAL1
+WDTO_60MS	LITERAL1
+WDTO_250MS	LITERAL1
+WDTO_120MS	LITERAL1
+WDTO_500MS	LITERAL1
+WDTO_1S	LITERAL1
+WDTO_2S	LITERAL1
+WDTO_4S	LITERAL1
+WDTO_8S	LITERAL1

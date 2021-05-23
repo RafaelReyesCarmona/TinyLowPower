@@ -1,0 +1,29 @@
+{
+	"name": "TinyLowPower",
+	"version": "0.1",
+	"license": "GPL-3.0-or-later",
+	"keywords": "standby, sleep, low power",
+	"description": "Tiny Arduino library for low power.",
+	"authors":
+	[
+		{
+		"name": "Rafael Reyes Carmona",
+		"email": "rafael.reyes.carmona@gmail.com",
+		"url": "https://github.com/RafaelReyesCarmona/",
+		"maintainer": true
+		}
+	],
+	"repository":
+	{
+		"type": "git",
+		"url": "https://github.com/RafaelReyesCarmona/TinyLowPower.git"
+	},
+	"frameworks": [
+	  "arduino"
+	],
+	"platforms": [
+	  "atmelavr",
+		"lgt8f",
+	  "teensy"
+	]
+}

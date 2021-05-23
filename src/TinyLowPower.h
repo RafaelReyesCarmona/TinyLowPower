@@ -43,10 +43,10 @@ rafael.reyes.carmona@gmail.com
 #include <avr/interrupt.h>
 
 #ifndef cbi
-  #define cbi(sfr, bit)   ((sfr) &= ~(1 << (bit)))
+  #define cbi(sfr, bit)   ((sfr) &= ~_BV(bit))
 #endif
 #ifndef sbi
-  #define sbi(sfr, bit)   ((sfr) |= (1 << (bit)))
+  #define sbi(sfr, bit)   ((sfr) |= _BV(bit))
 #endif
 
 /* Periods for TinyLowPower:
@@ -65,7 +65,7 @@ rafael.reyes.carmona@gmail.com
 #define TinyLowPower(period)                  \
   do {                                        \
       wdt_enable(period);                     \
-      WDTCSR |= (1 << WDIE);                  \
+      WDTCSR |= _BV(WDIE);                    \
       set_sleep_mode(SLEEP_MODE_EXT_STANDBY); \
       cli();                                  \
       sleep_enable();                         \
